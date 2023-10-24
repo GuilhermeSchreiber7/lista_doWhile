@@ -6,11 +6,12 @@
     */
 
     //Entrada
-
+    let nota = Number(prompt(`informe uma nota de zero a dez  (0 - 10)`).trim());
 
     //Processamento
-
-
+    while (nota < 0 || nota >10) {
+        nota = Number(prompt(`informe uma nota de zero a dez  (0 - 10)`).trim());
+    }
     //Saída
 
 </script>

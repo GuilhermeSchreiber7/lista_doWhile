@@ -11,10 +11,20 @@
     */
 
     //Entrada
-
-
+    let Name = prompt(`Seu nome`).trim()
+    let Idade = Number(prompt(`Idade`).trim()) 
+    let salario = prompt(`Seu salário`).trim()
+    let Sex = prompt(`Seu sexo biológico`).trim()
+    let EC = prompt(`Estado Civil`).trim()
+    
     //Processamento
-
+    while (Name.length <= 3 || Idade > 150 || Idade < 0 || salario < 0 || sex != "f" || sex != "m" || EC != "s" || EC != "c" || EC != "v" || EC != "d") {
+        Name = prompt(`Seu nome`).trim()
+        Idade = Number(prompt(`Idade`).trim()) 
+        salario = prompt(`Seu salário`).trim()
+        Sex = prompt(`Seu Sexo`).trim()
+        EC = prompt(`Estado Civil`).trim()
+    }
 
     //Saída
 

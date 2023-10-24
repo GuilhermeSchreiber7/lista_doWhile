@@ -6,10 +6,17 @@
     */
 
     //Entrada
-
+    var paisA = 80000
+    var paisB = 200000
+    let ano = 0
 
     //Processamento
-
+    while (paisA < paisB) {
+        paisA*=1.03
+        paisB*=1.015
+        ano++
+        alert(`ano: ${ano} \n País A: ${paisA.toFixed(2)} \n Pais B; ${paisB.toFixed(2)}`)
+    }
 
     //Saída
 
