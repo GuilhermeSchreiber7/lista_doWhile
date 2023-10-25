@@ -6,11 +6,27 @@
     */
 
     //Entrada
-
+    let senhaEnter = Number(prompt(`insira uma senha de quatro números inteiros`).trim())
+    let senha = ""
+    let i = 0
 
     //Processamento
 
+    while (senhaEnter.lenght < 4 || senhaEnter > 4 && isNaN(senhaEnter) != false) {
+        alert(`senha inválida`)
+        senhaEnter = Number(prompt(`insira uma senha de quatro números inteiros`))
 
+
+    }
+    while (senha !== senhaEnter) {
+        senha = Number(prompt("sua senha").trim())
+        if (senha === senhaEnter) {
+            alert("Senha Correta");
+        }
+        else {
+            alert(`senha incorreta`)
+        }
+    }
     //Saída
 
 </script>
