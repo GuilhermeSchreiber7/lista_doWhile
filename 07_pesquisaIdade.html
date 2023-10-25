@@ -13,11 +13,30 @@
     */
 
     //Entrada
-
-
+    let somaSalario = 0;
+    let qPerguntas = 0;
+    let qMulher = 0;
+    let idadeP = 0
+    let idade = [];
+    let sexo = [];
+    let sexoP = 0;
+    let salario = [];
+    let salarioP = 0;
     //Processamento
-
-
+    while (true) {
+        idadeP = Number(prompt(`Idade`).trim())
+        if (idadeP <= 0 ) {break};
+        qPerguntas++
+        idade.push(idadeP)
+        salarioP = Number(prompt(`salário`))
+        salario.push(salarioP)
+        somaSalario +=salarioP
+        sexoP = prompt(`sexo biológico (f - feminino / m - masculino)`).trim().toLowerCase()
+        sexo.push(sexoP)
+        if (sexoP == "f") qMulher++
+        
+    }
+    document.write(`média de sálarios:${somaSalario/qPerguntas} <br> menor idade: ${idade.sort()} `)
     //Saída
 
 </script>

@@ -20,11 +20,23 @@
     */
 
     //Entrada
-
-
+     let qEleitores = Number(prompt(`quantidade de eleitores`).trim());
+     let eleitor = 0
+     let jao = 0
+     let maria = 0
+     let nulo = 0
+     let branco = 0
     //Processamento
-
-
+    while (eleitor < qEleitores) {
+        let voto = Number(prompt(`em quem você quer votar? 1 - Candidato Joãozinho \n 2 - Candidato Mariazinha`).trim())
+        if (voto == 1) jao++
+         else if (voto == 2) maria++
+         else if (voto == 3) nulo++
+         else if (voto == 4) branco++
+         else nulo++
+        eleitor++
+    }
+    alert(`Joãozinho: ${jao} votos (${(jao/eleitor)*100}%) \n Mariazinha: ${maria} votos (${(maria/eleitor)*100}%) \n Nulos: ${nulo} (${(nulo/eleitor)*100}%) \n Branco: ${branco} (${(branco/eleitor)*100}%)`)
     //Saída
 
 </script>
